@@ -39,6 +39,35 @@ This Rust Microservice Starter Kit is designed to provide a solid foundation for
 - **Memory Safety**: Rust's ownership model ensures memory safety without garbage collection.
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
+
+### Project Structure
+```
+./rust-microservice-starter-kit
+├── Cargo.lock
+├── Cargo.toml
+├── README.md
+├── src
+│   ├── api
+│   │   ├── handlers
+│   │   ├── mod.rs
+│   │   └── routes.rs
+│   ├── config.rs
+│   ├── db
+│   │   └── mod.rs
+│   ├── error.rs
+│   ├── lib.rs
+│   ├── main.rs
+│   ├── models
+│   │   ├── feature_flag.rs
+│   │   └── mod.rs
+│   └── services
+│       ├── feature_flag_services.rs
+│       └── mod.rs
+└── tests
+    ├── api_tests.rs
+    └── service.tests.rs
+```
+
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
 ### Prerequisites
@@ -112,6 +141,4 @@ cargo test
 See also the list of [contributors](https://github.com/benborla/rust-microservice-starter-kit/contributors) who participated in this project.
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+- WIP
