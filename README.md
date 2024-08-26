@@ -45,10 +45,17 @@ This Rust Microservice Starter Kit is designed to provide a solid foundation for
 ./rust-microservice-starter-kit
 ├── Cargo.lock
 ├── Cargo.toml
+├── Dockerfile
 ├── README.md
+├── docs
+│   └── API.md
+├── fly.toml
 ├── src
 │   ├── api
 │   │   ├── handlers
+│   │   │   ├── feature_flags.rs
+│   │   │   ├── health_check.rs
+│   │   │   └── mod.rs
 │   │   ├── mod.rs
 │   │   └── routes.rs
 │   ├── config.rs
@@ -58,14 +65,16 @@ This Rust Microservice Starter Kit is designed to provide a solid foundation for
 │   ├── lib.rs
 │   ├── main.rs
 │   ├── models
-│   │   ├── feature_flag.rs
-│   │   └── mod.rs
+│   │   ├── feature_flags.rs
+│   │   ├── mod.rs
+│   │   └── prelude.rs
 │   └── services
-│       ├── feature_flag_services.rs
+│       ├── feature_flag_service.rs
 │       └── mod.rs
 └── tests
     ├── api_tests.rs
     └── service.tests.rs
+
 ```
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
