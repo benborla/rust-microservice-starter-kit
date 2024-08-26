@@ -7,15 +7,18 @@ use tracing::Level;
 
 use crate::api::handlers::feature_flags;
 use crate::api::handlers::health_check;
-use crate::services::feature_flag_services::FeatureFlagService;
+use crate::services::feature_flag_service::FeatureFlagService;
 
 pub fn create_router(feature_flag_service: Arc<FeatureFlagService>) -> Router {
     Router::new()
+        //# Route "/" => health_check handler
         .route("/", get(health_check::status))
+        //# Route [GET, POST]: /api/v1/feature_flags => feature_flags handler
         .route(
             "/api/v1/feature_flags",
             get(feature_flags::all).post(feature_flags::create),
         )
+        //# Route [GET, PUT, DELETE]: /api/v1/feature_flags/[:name] => feature_flags handler
         .route(
             "/api/v1/featrure_flags/:name",
             get(feature_flags::get)

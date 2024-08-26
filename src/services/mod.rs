@@ -1,1 +1,1 @@
-pub mod feature_flag_services;
+pub mod feature_flag_service;

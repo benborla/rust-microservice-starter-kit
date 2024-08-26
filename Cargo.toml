@@ -35,6 +35,9 @@ dotenv = "0.15.0"
 postgres = "0.19.8"
 postgres-openssl = "0.5.0"
 openssl = "0.10.66"
+sea-orm = { version = "1.0.0-rc.5", features = [ "sqlx-postgres", "runtime-tokio-native-tls", "macros", "debug-print" ] }
+chrono = "0.4.38"
+axum-macros = "0.4.1"
 
 [dev-dependencies]
 tokio-test = "0.4"

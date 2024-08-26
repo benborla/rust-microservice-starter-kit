@@ -7,11 +7,8 @@ use thiserror::Error;
 
 #[derive(Error, Debug)]
 pub enum AppError {
-    #[error("Database Migration Error: {0}")]
-    MigrationError(#[from] sqlx::migrate::MigrateError),
-
     #[error("Database Error: {0}")]
-    DatabaseError(#[from] sqlx::Error),
+    DatabaseError(#[from] sea_orm::DbErr),
 
     #[error("Configuration Error: {0}")]
     ConfigError(String),
@@ -29,14 +26,7 @@ pub enum AppError {
 impl IntoResponse for AppError {
     fn into_response(self) -> Response {
         let (status, error_message) = match self {
-            AppError::MigrationError(_) => (
-                StatusCode::INTERNAL_SERVER_ERROR,
-                "Database Migration Error",
-            ),
-            AppError::DatabaseError(_) => (
-                StatusCode::INTERNAL_SERVER_ERROR,
-                "Database Error, need more details",
-            ),
+            AppError::DatabaseError(_) => (StatusCode::INTERNAL_SERVER_ERROR, "Database Error"),
             AppError::ConfigError(_) => (StatusCode::INTERNAL_SERVER_ERROR, "Configuration Error"),
             AppError::NotFound(_) => (StatusCode::NOT_FOUND, "Not Found"),
             AppError::BadRequest(_) => (StatusCode::BAD_REQUEST, "Bad request"),
