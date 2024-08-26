@@ -130,7 +130,8 @@ cargo test
 - [Axum](https://github.com/tokio-rs/axum) - Web Framework
 - [Tokio](https://tokio.rs/) - Asynchronous Runtime
 - SQLX - async, pure Rust SQL crate featuring compile-time checked queries without a DSL.
-- [Diesel ORM](https://diesel.rs/) - ORM and Query Builder (WIP)
+- [SeaORM](https://www.sea-ql.org/SeaORM/) - ORM and Query Builder
+- [SeaORM CLI](https://www.sea-ql.org/SeaORM/docs/generate-entity/sea-orm-cli/) - Official SeaORM CLI tool
 - [Postgres](https://www.postgresql.org/) - Database
 - [Neon](https://neon.tech/) - Serverless Postgres for modern developers
 - [Docker](https://www.docker.com/) - Containerization

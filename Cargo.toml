@@ -26,17 +26,12 @@ path = "src/lib.rs"
 axum = "0.7.5"
 tower-http = { version = "0.5.0", features = ["trace"] }
 tokio = { version = "1.35", features = ["full"] }
-sqlx = { version = "0.7", features = ["runtime-tokio-rustls", "postgres", "chrono"] }
 serde = { version = "1.0", features = ["derive"] }
 tracing = "0.1"
 tracing-subscriber = "0.3"
 thiserror = "1.0"
 dotenv = "0.15.0"
-postgres = "0.19.8"
-postgres-openssl = "0.5.0"
-openssl = "0.10.66"
 sea-orm = { version = "1.0.0-rc.5", features = [ "sqlx-postgres", "runtime-tokio-native-tls", "macros", "debug-print" ] }
-chrono = "0.4.38"
 axum-macros = "0.4.1"
 
 [dev-dependencies]
