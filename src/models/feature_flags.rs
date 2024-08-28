@@ -4,7 +4,7 @@ use sea_orm::entity::prelude::*;
 use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, DeriveEntityModel, Eq)]
-#[sea_orm(table_name = "feature_flags")]
+#[sea_orm(table_name = "feature_flag")]
 pub struct Model {
     #[sea_orm(primary_key, auto_increment = false)]
     pub name: String,
