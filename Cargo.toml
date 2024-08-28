@@ -6,9 +6,8 @@ authors = ["benborla@icloud.com"]
 description = "A high-performance, type-safe Microservice built with Rust"
 license = "MIT OR Apache-2.0"
 readme = "README.md"
-repository = "https://github.com/benborla/ensign-api"
-documentation = "https://docs.rs/ensign_api"
-homepage = "https://github.com/benborla/ensign-api"
+repository = "https://github.com/benborla/rust-microservice-starter-kit/"
+homepage = "https://github.com/benborla/rust-microservice-starter-kit/"
 keywords = ["microservice", "rust", "web", "api", "open-source"]
 categories = ["web-programming", "development-tools"]
 
