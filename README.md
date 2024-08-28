@@ -100,7 +100,7 @@ Open a terminal and run:
 cargo install sea-orm-cli
 ```
 
- **3.** Neon PostgreSQL
+ **3.** Neon PostgreSQL<br>
 Turbocharge your database with Neon! ⚡️ Serverless, autoscaling PostgreSQL in the cloud. Zero management, instant setup. Try Neon now and supercharge your app's performance!
 
 To get started with Neon:
