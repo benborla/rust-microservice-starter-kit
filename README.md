@@ -90,17 +90,17 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-## 1. Rust (latest stable version)
+**1.** Rust (latest stable version)
 - Visit https://www.rust-lang.org/tools/install
 - Follow the instructions for your operating system
 
-## 2. SeaORM CLI
+**2.** SeaORM CLI
 Open a terminal and run:
 ```
 cargo install sea-orm-cli
 ```
 
-## 3. Neon PostgreSQL
+ **3.** Neon PostgreSQL
 Turbocharge your database with Neon! ⚡️ Serverless, autoscaling PostgreSQL in the cloud. Zero management, instant setup. Try Neon now and supercharge your app's performance!
 
 To get started with Neon:
@@ -108,11 +108,12 @@ To get started with Neon:
 - Sign up for an account
 - Create a new project to get your database credentials
 
-## Alternatively, if you prefer local hosting:
+Alternatively, if you prefer local hosting:
 
-### PostgreSQL (local installation)
+**PostgreSQL** (local installation)
 - Download from https://www.postgresql.org/download/
 - Follow the installation guide for your operating system
+
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running.
