@@ -1,9 +1,9 @@
 
 
-# Rust Microservice Starter Kit
 
 <div align="center">
 
+# Rust Microservice Starter Kit
   [![Status](https://img.shields.io/badge/status-active-success.svg)]() 
   [![GitHub Issues](https://img.shields.io/github/issues/benborla/rust-microservice-starter-kit.svg)](https://github.com/benborla/rust-microservice-starter-kit/issues)
   [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/benborla/rust-microservice-starter-kit.svg)](https://github.com/benborla/rust-microservice-starter-kit/pulls)
