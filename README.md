@@ -85,7 +85,8 @@ This Rust Microservice Starter Kit provides a solid foundation for building high
    ```
    # Create .env file 
    cp .env.dist .env
-   # Edit your .env and replace the value of DATABASE_URL, it should be a POSTGRESQL Connection String from your Neon Database, or you local PostgreSQL server.
+   # Edit your .env and replace the value of DATABASE_URL,
+   # it should be a POSTGRESQL Connection String from your Neon database or your local PostgreSQL server.
 
    # Run migrations
    cd migration
