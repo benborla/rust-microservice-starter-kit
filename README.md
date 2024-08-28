@@ -27,7 +27,7 @@
 ## 🧐 About <a name = "about"></a>
 This Rust Microservice Starter Kit is designed to provide a solid foundation for building high-performance, type-safe, and memory-safe microservices. It leverages the power of Rust along with modern frameworks and tools to ensure robust and efficient API development.
 
-**Visit Demo: https://ensign-api.fly.dev/**
+**Visit Demo: https://rust-microservice-starter-kit.fly.dev **
 
 ### Key Features:
 - **Rust**: A language empowering everyone to build reliable and efficient software.
@@ -89,8 +89,6 @@ This Rust Microservice Starter Kit is designed to provide a solid foundation for
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
 ### Prerequisites
-
-What things you need to install the software and how to install them.
 
 1. Rust (latest stable version):
   Visit https://www.rust-lang.org/tools/install
