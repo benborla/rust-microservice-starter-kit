@@ -9,7 +9,7 @@ use std::sync::Arc;
 
 use crate::error::AppError;
 use crate::models::feature_flags::Model as FeatureFlag;
-use crate::services::feature_flag_service::FeatureFlagService;
+use crate::services::feature_flag_service::{FeatureFlagService, PartialFeatureFlag};
 
 #[debug_handler]
 pub async fn all(
@@ -45,11 +45,10 @@ pub async fn get(
 #[debug_handler]
 pub async fn update(
     State(service): State<Arc<FeatureFlagService>>,
-    Path(name): Path<String>,
-    Json(mut flag): Json<FeatureFlag>,
+    Path(id): Path<String>,
+    Json(flag): Json<PartialFeatureFlag>,
 ) -> Result<Json<FeatureFlag>, AppError> {
-    flag.name = name;
-    service.update(flag).await.map(Json)
+    service.update(&id, flag).await.map(Json)
 }
 
 #[debug_handler]

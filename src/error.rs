@@ -21,6 +21,9 @@ pub enum AppError {
 
     #[error("Server Error: {0}")]
     ServerError(#[from] std::io::Error),
+
+    #[error("Lock Error")]
+    LockError,
 }
 
 impl IntoResponse for AppError {
@@ -31,6 +34,7 @@ impl IntoResponse for AppError {
             AppError::NotFound(_) => (StatusCode::NOT_FOUND, "Not Found"),
             AppError::BadRequest(_) => (StatusCode::BAD_REQUEST, "Bad request"),
             AppError::ServerError(_) => (StatusCode::INTERNAL_SERVER_ERROR, "Server Error"),
+            AppError::LockError => (StatusCode::INTERNAL_SERVER_ERROR, "Lock Error"),
         };
 
         (status, error_message.to_string()).into_response()
