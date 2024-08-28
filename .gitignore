@@ -2,3 +2,4 @@
 .env
 fly.toml
 Dockerfile
+/migration/target
