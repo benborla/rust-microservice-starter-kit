@@ -1,4 +1,5 @@
 
+
 # Rust Microservice Starter Kit
 
 <div align="center">
@@ -20,15 +21,13 @@
 - [About](#about)
 - [Getting Started](#getting_started)
 - [Deployment](#deployment)
-- [Usage](#usage)
 - [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
 - [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
 
 ## 🧐 About <a name = "about"></a>
 This Rust Microservice Starter Kit is designed to provide a solid foundation for building high-performance, type-safe, and memory-safe microservices. It leverages the power of Rust along with modern frameworks and tools to ensure robust and efficient API development.
+
+**Visit Demo: https://ensign-api.fly.dev/**
 
 ### Key Features:
 - **Rust**: A language empowering everyone to build reliable and efficient software.
@@ -77,18 +76,18 @@ This Rust Microservice Starter Kit is designed to provide a solid foundation for
 
 ```
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
 ### Prerequisites
 
 What things you need to install the software and how to install them.
 
-```
+
 - Rust (latest stable version)
-- PostgreSQL
-- Docker (optional, for containerization)
-- WIP
-```
+- [SeaORM CLI](https://www.sea-ql.org/SeaORM/docs/generate-entity/sea-orm-cli)
+- [Neon PostgreSQL](https://neon.tech)
+    - Or if you want to hose your PostgreSQL, you may install PostgreSQL in your local machine
+
 
 ### Installing
 
@@ -102,7 +101,7 @@ A step by step series of examples that tell you how to get a development env run
 
 2. Install dependencies
    ```
-   cargo build
+   cargo build; cd migration; cargo build
    ```
 
 3. Set up the database
@@ -111,29 +110,26 @@ A step by step series of examples that tell you how to get a development env run
    cp .env.dist .env
    
    # Run migrations
-   cargo run --bin migrate
+   cd migration
+   cargo run -- up
    ```
 
-4. Run the application
+4. Go back to the project, then run the application
    ```
    cargo run
    ```
 
-The server should now be running on `http://localhost:8080`.
+The server should now be running on `http://localhost:3380`.
 
 ## 🔧 Running the tests <a name = "tests"></a>
-Explain how to run the automated tests for this system.
-
+You may find the tests files in `./tests`
+Note: There's a sample Unit Test available, you may run it using
 ```
 cargo test
 ```
 
-## 🎈 Usage <a name="usage"></a>
--- TODO --
-
 ## 🚀 Deployment <a name = "deployment"></a>
--- TODO --
-
+You may deploy this using [FlyIO](https://fly.io/).
 ## ⛏️ Built Using <a name = "built_using"></a>
 - [Rust](https://www.rust-lang.org/) - Programming Language
 - [Axum](https://github.com/tokio-rs/axum) - Web Framework
@@ -142,12 +138,6 @@ cargo test
 - [SeaORM CLI](https://www.sea-ql.org/SeaORM/docs/generate-entity/sea-orm-cli/) - Official SeaORM CLI tool
 - [Postgres](https://www.postgresql.org/) - Database
 - [Neon](https://neon.tech/) - Serverless Postgres for modern developers
-- [Docker](https://www.docker.com/) - Containerization (Soon)
 
 ## ✍️ Authors <a name = "authors"></a>
 - [@benborla](https://github.com/benborla) - Idea & Initial work
-
-See also the list of [contributors](https://github.com/benborla/rust-microservice-starter-kit/contributors) who participated in this project.
-
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-- WIP
