@@ -49,6 +49,15 @@ This Rust Microservice Starter Kit is designed to provide a solid foundation for
 ├── docs
 │   └── API.md
 ├── fly.toml
+├── migration
+│   ├── Cargo.lock
+│   ├── Cargo.toml
+│   ├── README.md
+│   └── src
+│       ├── lib.rs
+│       ├── m20240828_134140_create_feature_flag_table.rs
+│       ├── m20240828_140244_seed_feature_flag_with_sample_data.rs
+│       └── main.rs
 ├── src
 │   ├── api
 │   │   ├── handlers
@@ -72,8 +81,9 @@ This Rust Microservice Starter Kit is designed to provide a solid foundation for
 │       └── mod.rs
 └── tests
     ├── api_tests.rs
-    └── service.tests.rs
-
+    └── common
+        ├── feature_flag_mock.rs
+        └── mod.rs
 ```
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
