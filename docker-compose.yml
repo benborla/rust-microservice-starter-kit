@@ -1,0 +1,8 @@
+services:
+  api:
+    image: benborla/rust-microservice-starter-kit:latest
+    env_file: ./.env
+    build:
+      context: .
+    ports:
+      - "3000:3000"

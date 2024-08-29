@@ -21,9 +21,6 @@ path = "src/main.rs"
 name = "rust_microservice_starter_kit"
 path = "src/lib.rs"
 
-[workspace]
-members = [".", "migration"]
-
 [dependencies]
 axum = "0.7.5"
 tower-http = { version = "0.5.0", features = ["trace"] }
@@ -36,7 +33,7 @@ dotenv = "0.15.0"
 sea-orm = { version = "1.0.0-rc.5", features = [ "sqlx-postgres", "runtime-tokio-native-tls", "macros", "debug-print" ] }
 axum-macros = "0.4.1"
 async-trait = "0.1.81"
-migration = { path = "migration" } # depends on your needs
+openssl = { version = "0.10.66", features = ["vendored"] }
 
 [dev-dependencies]
 bytes = "1.0"

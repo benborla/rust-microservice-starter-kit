@@ -99,7 +99,7 @@ This Rust Microservice Starter Kit provides a solid foundation for building high
    cargo run
    ```
 
-The server should now be running on `http://localhost:3380`.
+The server should now be running on `http://localhost:3000`.
 
 ## 🏗️ Project Structure <a name="project-structure"></a>
 
