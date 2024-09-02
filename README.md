@@ -29,7 +29,7 @@ A high-performance, type-safe, and memory-safe microservice starter kit built wi
 ## 🧐 About <a name="about"></a>
 This Rust Microservice Starter Kit provides a solid foundation for building high-performance, type-safe, and memory-safe microservices. It harnesses the power of Rust along with modern frameworks and tools to ensure robust and efficient API development.
 
-**Visit Demo:** [https://rust-microservice-startup-kit.benborla.dev/](https://rust-microservice-starter-kit.fly.dev)
+**Visit Demo:** https://rust-microservice-starter-kit.fly.dev/
 
 ###
 
